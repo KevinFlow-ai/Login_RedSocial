@@ -34,8 +34,21 @@
         </activity> -->
 
 
-        <!-- para reproducir el home de la red social -->
+        <!-- para reproducir el home de la red social
         <activity android:name=".HomeRedSocialActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> -->
+
+
+
+        <!-- para lanzar la de spoty en horizontal -->
+
+        <activity
+            android:name=".SpotyActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -43,9 +56,7 @@
         </activity>
 
 
-
-
-
+        <!-- Opcionalmente elimina o comenta el intent-filter de la otra actividad que antes era la principal -->
 
 
 
