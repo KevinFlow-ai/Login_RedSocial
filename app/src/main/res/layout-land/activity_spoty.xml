@@ -3,20 +3,294 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="273dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="161dp"
-        android:layout_marginEnd="248dp"
-        android:layout_marginBottom="158dp"
-        android:text="Button"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="629dp"
+        android:layout_height="303dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="69dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.353"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509"
+        app:srcCompat="@drawable/spoty_background" />
+
+
+    <!-- Botón 1 -->
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:src="@drawable/spoty_home"
+        android:background="@null"
+        android:layout_marginTop ="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Botón 2 -->
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:src="@drawable/spoty_buscar"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Botón 3 -->
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:src="@drawable/spoty_play"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Botón 4 -->
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:src="@drawable/spoty_icono"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton5"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Botón 5 -->
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:src="@drawable/spoty_mezcla"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Botón 6 -->
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:src="@drawable/spoty_usuario"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Botón 7 -->
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:src="@drawable/spoty_pausa"
+        android:background="@null"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="534dp"
+        android:text="Reels"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton1"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="96dp"
+        android:background="@null"
+        android:backgroundTint="@color/blue"
+        android:text="Follow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton19" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="271dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spoty_barra_de_busqueda" />
+
+    <!-- Número de likes -->
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:srcCompat="@drawable/spoty_icono_perfil"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="68dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spoty_corazon" />
+
+    <TextView
+        android:id="@+id/textViewLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="22,6k"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButton17" />
+
+    <ImageButton
+        android:id="@+id/imageButton18"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:srcCompat="@drawable/spoty_campana"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/textViewLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="688dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="900"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton18" />
+
+    <ImageButton
+        android:id="@+id/imageButton19"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="138dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLikes"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/spoty_compartir" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fotoperfil" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/spoty_account"
+        tools:layout_editor_absoluteX="629dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="12dp"
+        android:text="Juanchi"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/spoty_playy"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="197dp"
+        android:layout_height="23dp"
+        android:text="La Gasolina Daddy Yankee "
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/spoty_barra_reproducir1"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
