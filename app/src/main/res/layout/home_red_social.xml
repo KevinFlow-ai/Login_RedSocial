@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <!-- Contenedor horizontal arriba -->
+
     <LinearLayout
         android:id="@+id/topRow"
         android:layout_width="0dp"
@@ -233,6 +234,13 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/comentario1" />
 
+            <ImageButton
+                android:id="@+id/imageButtonComment"
+                android:layout_width="44dp"
+                android:layout_height="29dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/compartir" />
+
         </LinearLayout>
 
 
@@ -335,6 +343,13 @@
                 android:layout_height="26dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/comentario1" />
+
+            <ImageButton
+                android:id="@+id/imageButtonComment"
+                android:layout_width="44dp"
+                android:layout_height="29dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/compartir" />
 
         </LinearLayout>
 
