@@ -3,27 +3,208 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SpotyActivity">
 
+    <!-- Fondo principal -->
+    <ImageView
+        android:id="@+id/imageViewFondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/spoty_background" />
 
-    <include
-        layout="@layout/layaout_reutilizable">
-
-
-    </include>
-    <Button
-        android:id="@+id/button"
+    <!-- Columna derecha: foto perfil, corazon, campana, compartir -->
+    <LinearLayout
+        android:id="@+id/layoutDerecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="143dp"
-        android:layout_marginTop="314dp"
-        android:layout_marginEnd="178dp"
-        android:layout_marginBottom="369dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="120dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintBottom_toBottomOf="parent">
 
+        <ImageView
+            android:id="@+id/fotoPerfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/fotoperfil"
+            android:layout_marginBottom="12dp" />
+
+        <ImageButton
+            android:id="@+id/btnCorazon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/spoty_corazon" />
+
+        <TextView
+            android:id="@+id/tvLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22,6k"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnCampana"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/spoty_campana" />
+
+        <TextView
+            android:id="@+id/tvCampana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="900"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnCompartir"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/spoty_compartir" />
+    </LinearLayout>
+
+    <!-- Bloque inferior superpuesto -->
+    <LinearLayout
+        android:id="@+id/layoutInferior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#66000000"
+        app:layout_constraintBottom_toTopOf="@+id/layoutBotones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Perfil + nombre + botón play -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btnPerfil"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/spoty_icono_perfil" />
+
+            <TextView
+                android:id="@+id/tvUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Juanchi"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/spoty_playy" />
+        </LinearLayout>
+
+        <!-- Título de la canción -->
+        <TextView
+            android:id="@+id/tvCancion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="La Gasolina — Daddy Yankee"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- Barra de reproducción -->
+        <ImageView
+            android:id="@+id/barraRepro"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/spoty_barra_reproducir1"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+
+    <!-- Botones principales abajo -->
+    <LinearLayout
+        android:id="@+id/layoutBotones"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#88000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/spoty_home" />
+
+        <ImageButton
+            android:id="@+id/btnBuscar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/spoty_buscar" />
+
+        <ImageButton
+            android:id="@+id/btnPlayMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/spoty_play" />
+
+        <ImageButton
+            android:id="@+id/btnIcono"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/spoty_icono" />
+
+        <ImageButton
+            android:id="@+id/btnMezcla"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/spoty_mezcla" />
+
+        <ImageButton
+            android:id="@+id/btnUsuario"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/spoty_usuario" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
