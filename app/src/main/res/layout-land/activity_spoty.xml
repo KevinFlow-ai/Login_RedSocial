@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
+
+    <!-- Botón 1 -->
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="629dp"
@@ -16,14 +18,11 @@
         android:layout_marginBottom="69dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintHorizontal_bias="0.327"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.509"
         app:srcCompat="@drawable/spoty_background" />
 
-
-    <!-- Botón 1 -->
     <ImageButton
         android:id="@+id/imageButton1"
         android:layout_width="60dp"
@@ -233,44 +232,48 @@
         android:id="@+id/imageButton"
         android:layout_width="56dp"
         android:layout_height="51dp"
-        android:layout_marginTop="168dp"
-        android:layout_marginEnd="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView11"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.928"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="92dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@id/imageView4"
+        app:layout_constraintStart_toStartOf="@id/imageView4"
         app:srcCompat="@drawable/spoty_icono_perfil" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="96dp"
         android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="104dp"
         android:text="Juanchi"
         android:textColor="@color/white"
         android:textSize="25dp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="236dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageButton" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="39dp"
         android:layout_height="31dp"
         app:srcCompat="@drawable/spoty_playy"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="287dp" />
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="279dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="197dp"
         android:layout_height="23dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="52dp"
         android:text="La Gasolina Daddy Yankee "
         android:textColor="@color/white"
         android:textSize="15dp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="287dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/btnCorazon"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView14"
