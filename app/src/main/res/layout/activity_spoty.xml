@@ -20,23 +20,25 @@
         app:srcCompat="@drawable/spoty_background" />
 
     <!-- Columna derecha: foto perfil, corazon, campana, compartir -->
+
+    <!-- Bloque inferior superpuesto -->
     <LinearLayout
         android:id="@+id/layoutDerecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="248dp"
         android:gravity="center_horizontal"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="120dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
             android:id="@+id/fotoPerfil"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/fotoperfil"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/fotoperfil" />
 
         <ImageButton
             android:id="@+id/btnCorazon"
@@ -49,11 +51,11 @@
             android:id="@+id/tvLikes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
             android:text="22,6k"
             android:textColor="@android:color/white"
-            android:textSize="14sp"
-            android:gravity="center"
-            android:layout_marginBottom="8dp" />
+            android:textSize="14sp" />
 
         <ImageButton
             android:id="@+id/btnCampana"
@@ -66,11 +68,11 @@
             android:id="@+id/tvCampana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
             android:text="900"
             android:textColor="@android:color/white"
-            android:textSize="14sp"
-            android:gravity="center"
-            android:layout_marginBottom="8dp" />
+            android:textSize="14sp" />
 
         <ImageButton
             android:id="@+id/btnCompartir"
@@ -80,7 +82,6 @@
             android:src="@drawable/spoty_compartir" />
     </LinearLayout>
 
-    <!-- Bloque inferior superpuesto -->
     <LinearLayout
         android:id="@+id/layoutInferior"
         android:layout_width="0dp"

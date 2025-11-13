@@ -21,7 +21,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> -->
+        </activity>-->
 
 
         <!-- PerfilRedSocialActivity (perfil del usuario), cuando le doy al play, para mostrar esta pestaña del perfil social
@@ -44,7 +44,7 @@
 
 
 
-        <!-- para lanzar la de spoty en horizontal -->
+        <!-- para lanzar la de spoty en horizontal-->
 
         <activity
             android:name=".SpotyActivity"
