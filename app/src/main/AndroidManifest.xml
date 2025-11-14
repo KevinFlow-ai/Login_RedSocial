@@ -44,7 +44,7 @@
 
 
 
-        <!-- para lanzar la de spoty en horizontal-->
+        <!-- para lanzar la de spoty en horizontal
 
         <activity
             android:name=".SpotyActivity"
@@ -54,10 +54,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        -->
 
 
-        <!-- Opcionalmente elimina o comenta el intent-filter de la otra actividad que antes era la principal -->
+        <activity android:name=".Cardview_CartaDePresentacion_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
 
+            </intent-filter>
+
+
+        </activity>
 
 
     </application>
