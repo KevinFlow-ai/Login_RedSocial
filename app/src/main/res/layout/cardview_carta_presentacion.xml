@@ -14,6 +14,7 @@
         android:layout_marginBottom="12dp"
         android:text="Profesionales"
         android:textSize="50dp"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
@@ -24,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="560dp"
         android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -63,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-
+                android:layout_marginTop="30dp"
                 android:text="Kevin Flores"
                 android:textSize="20dp" />
 
@@ -73,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="0dp"
+                android:layout_marginTop="8dp"
                 android:text="Desarrollador de aplicaciones" />
 
 
@@ -115,6 +117,7 @@
                     android:id="@+id/imageView6"
                     android:layout_width="34dp"
                     android:layout_height="24dp"
+                    android:layout_marginRight="2dp"
                     app:srcCompat="@drawable/card_ubicacion" />
 
                 <TextView
@@ -128,7 +131,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="15dp"
                     android:text="€80/h"
                     android:textSize="16dp">
 
@@ -142,8 +145,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
 
                 <Button
                     android:id="@+id/button"
@@ -171,8 +174,9 @@
                 tools:layout_editor_absoluteX="21dp"
                 tools:layout_editor_absoluteY="497dp">
 
+
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/button5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -184,6 +188,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Python" />
+
+
 
 
             </LinearLayout>
