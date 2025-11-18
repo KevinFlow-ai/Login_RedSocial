@@ -5,31 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--Profesionales que tenemos-->
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Profesionales"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="330dp"
+        android:layout_height="560dp"
         android:layout_margin="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.498">
 
 
         <LinearLayout
-            android:layout_width="151dp"
-            android:layout_height="98dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
             android:layout_marginLeft="90dp"
             android:orientation="horizontal">
 
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="141dp"
+                android:layout_height="64dp"
+                android:layout_margin="20dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/fotoperfil" />
 
@@ -38,38 +52,196 @@
 
 
         <LinearLayout
-            android:layout_width="270dp"
-            android:layout_height="126dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="vertical">
 
-
+            <!-- NOMBRE USUARIO-->
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="153dp"
-                android:layout_height="52dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+
                 android:text="Kevin Flores"
                 android:textSize="20dp" />
 
+            <!-- Profesion-->
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:text="Desarrollador de aplicaciones" />
+
+
+
+            <!-- VALORACION/ESTRELLAS-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="71dp"
-                android:layout_gravity="center"
-                >
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_margin="25dp"
-                    android:text="Desarrollador de aplicaciones" />
+
+                    app:srcCompat="@drawable/card_estrella_valoracion" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="4,8"
+                    android:textSize="20dp" />
             </LinearLayout>
+
+            <!-- Ubicacion, nombre y precio-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="34dp"
+                    android:layout_height="24dp"
+                    app:srcCompat="@drawable/card_ubicacion" />
+
+                <TextView
+                    android:id="@+id/textViewUbicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="New York"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:text="€80/h"
+                    android:textSize="16dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+            <!-- HABILIDADES-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Programador" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Java" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="497dp">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="MySQL" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Python" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/verde"
+                    android:layout_margin="10dp"
+                    android:text="Disponible"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/grey"
+                    android:text="Contactar" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reservar"
+                    android:backgroundTint="@color/blue"/>
+            </LinearLayout>
+
+
+
+
         </LinearLayout>
 
 
+
+
     </androidx.cardview.widget.CardView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
