@@ -13,7 +13,8 @@
         android:theme="@style/Theme.Login_RedSocial">
 
         <!-- Estos es para el login, si quiero mostrar esto cuando le doy al play, quito los comentarios de esta
-        parte y pongo comentarios en el perfil de la red social
+        parte y pongo comentarios en el perfil de la red social-->
+
            <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,17 +22,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>-->
+        </activity>
 
 
-        <!-- PerfilRedSocialActivity (perfil del usuario), cuando le doy al play, para mostrar esta pestaña del perfil social
+
+        <!-- PerfilRedSocialActivity (perfil del usuario), cuando le doy al play, para mostrar esta pestaña del perfil social-->
         <activity android:name=".PerfilRedSocialActivity" android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> -->
+        </activity>
 
 
         <!-- para reproducir el home de la red social
@@ -69,6 +71,8 @@
         </activity>
         -->
 
+
+        <!-- para lanzar la de examen
         <activity android:name=".practicaExamen"
             android:exported="true">
             <intent-filter>
@@ -76,6 +80,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        -->
+
 
 
 

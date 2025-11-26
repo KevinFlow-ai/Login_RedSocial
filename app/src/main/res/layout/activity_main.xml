@@ -53,6 +53,7 @@
 
 
         <Button
+            android:id="@+id/Login_btn"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:text="Login"
@@ -60,8 +61,7 @@
             android:textColor="@color/design_default_color_secondary_variant"
             android:padding="18dp"
             android:layout_marginTop="32dp"
-            android:textSize="20sp"
-            android:id="@+id/Login_btn"/>
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
