@@ -22,18 +22,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+            </activity>
 
 
 
-        <!-- PerfilRedSocialActivity (perfil del usuario), cuando le doy al play, para mostrar esta pestaña del perfil social-->
-        <activity android:name=".PerfilRedSocialActivity" android:exported="true">
+            <!-- PerfilRedSocialActivity (perfil del usuario), cuando le doy al play, para mostrar esta pestaña del perfil social-->
+            <activity android:name=".PerfilRedSocialActivity" android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+            </activity>
 
 
         <!-- para reproducir el home de la red social
