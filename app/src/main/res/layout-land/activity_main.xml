@@ -85,18 +85,18 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/linkedin_btn"
-                android:layout_width="80dp"
-                android:layout_height="70dp"
+                android:id="@+id/google_btn"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
                 android:layout_margin="16dp"
-                android:src="@drawable/icono_linkedin" />
+                android:src="@drawable/icono_google2" />
 
             <ImageView
-                android:id="@+id/whasap_btn"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:id="@+id/microsoft_btn"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
                 android:layout_margin="16dp"
-                android:src="@drawable/whasap_icono" />
+                android:src="@drawable/icono_microsoft" />
 
 
 
