@@ -59,7 +59,7 @@
         -->
 
 
-        <!--
+
         <activity android:name=".Cardview_CartaDePresentacion_Activity"
             android:exported="true">
             <intent-filter>
@@ -69,7 +69,7 @@
             </intent-filter>
 
         </activity>
-        -->
+
 
 
         <!-- para lanzar la de examen
