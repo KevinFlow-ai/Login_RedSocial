@@ -14,7 +14,7 @@ public class SpotyActivity extends AppCompatActivity {
         /*
         Esta parte del programa, lo que hace es que cuando ejecutas el programa en el movil real
         la parte de arriba lo que es la señal, wifi, se esconda. Ya que sin esto, sale como una linea morada
-        arriba y queda muy feo, ya que el fondo es negro, y no se cubre toda la pantalla. si quiero volver
+        arriba y queda muy feo, ya que el fondo es negro, y no se cubre toda la pantaalla. si quiero volver
         a poner normal pongo comentarias desde el (*1 hasta el *2)
          */
 
